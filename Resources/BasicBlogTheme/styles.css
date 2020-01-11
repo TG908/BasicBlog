@@ -53,7 +53,7 @@ body {
 }
 
 .github:hover {
-  transform: scale(1.2);s
+  transform: scale(1.2);
 }
 
 header .wrapper {
@@ -97,6 +97,10 @@ nav li {
   }
 }
 
+nav li a:hover {
+  text-decoration: underline;
+}
+
 nav li a.selected {
     text-decoration: underline;
 }
@@ -128,6 +132,34 @@ a {
     border-radius: 8px;
     background-color: #eee;
     margin-bottom: 20px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.item-list > li::after {
+  content: "";
+  border-radius: 8px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.item-list > li:hover {
+-webkit-transform: scale(1.01, 1.01);
+  transform: scale(1.01, 1.01);
+}
+
+.item-list > li:hover::after {
+  opacity: 1;
 }
 
 @media (prefers-color-scheme: dark) {
