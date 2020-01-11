@@ -18,7 +18,7 @@ struct BasicBlog: Website {
     // Update these properties to configure your website:
     var url = URL(string: "https://your-website-url.com")!
     var name = "llvm::BasicBlog"
-    var description = "A blog about compilers and porgramming languages"
+    var description = "A blog about compilers and programming languages"
     var language: Language { .english }
     var imagePath: Path? { nil }
 }
