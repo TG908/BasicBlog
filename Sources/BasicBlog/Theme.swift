@@ -163,6 +163,10 @@ private extension Node where Context == HTML.BodyContext {
     static func wrapper(_ nodes: Node...) -> Node {
         .div(.class("wrapper"), .group(nodes))
     }
+    
+    static func contact(_ nodes: Node...) -> Node {
+        .div(.class("contact"), .group(nodes))
+    }
 
     static func header<T: Website>(
         for context: PublishingContext<T>,
@@ -171,6 +175,8 @@ private extension Node where Context == HTML.BodyContext {
         let sectionIDs = T.SectionID.allCases
 
         return .header(
+            .contact(
+                .a(.class("github"), .href("https://github.com/tg908"))),
             .wrapper(
                 .a(.class("site-name"), .href("/"), .text(context.site.name)),
                 .if(sectionIDs.count > 1,
@@ -218,9 +224,10 @@ private extension Node where Context == HTML.BodyContext {
             .p(
                 .text("Generated using "),
                 .a(
-                    .text("Publish"),
+                    .text("Publish."),
                     .href("https://github.com/johnsundell/publish")
-                )
+                ),
+                .text(" 100% JavaScript-free.")
             ),
             .p(.a(
                 .text("RSS feed"),

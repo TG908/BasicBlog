@@ -15,6 +15,13 @@ body {
     text-align: center;
 }
 
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1c1c1e;
+    color: #f2f2f7;
+  }
+}
+
 .wrapper {
     max-width: 900px;
     margin-left: auto;
@@ -23,8 +30,30 @@ body {
     text-align: left;
 }
 
-header {
-    background-color: #eee;
+.contact {
+    text-align: right;
+    padding: 10px;
+}
+
+.github {
+    background-image: url("/images/GitHub-Mark-64px.png");
+    display: block;
+    width: 32px;
+    height: 32px;
+    float: right;
+    background-position: center;
+    background-size: cover;
+    transition: transform .5s ease;
+}
+
+@media (prefers-color-scheme: dark) {
+  .github {
+    background-image: url("/images/GitHub-Mark-Light-64px.png");
+  }
+}
+
+.github:hover {
+  transform: scale(1.2);s
 }
 
 header .wrapper {
@@ -38,9 +67,16 @@ header a {
 }
 
 header .site-name {
-    font-size: 1.5em;
+    font-size: 1.8em;
     color: #000;
     font-weight: bold;
+    font-family: "Lucida Console", Monaco, monospace
+}
+
+@media (prefers-color-scheme: dark) {
+  header .site-name {
+    color: #f2f2f7;
+  }
 }
 
 nav {
@@ -49,9 +85,16 @@ nav {
 
 nav li {
     display: inline-block;
+    color: #000;
     margin: 0 7px;
     padding: 0px 10px 0px 10px;
     line-height: 1.5em;
+}
+
+@media (prefers-color-scheme: dark) {
+    nav li {
+    color: #f2f2f7;
+  }
 }
 
 nav li a.selected {
@@ -82,9 +125,15 @@ a {
 .item-list > li {
     display: block;
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 8px;
     background-color: #eee;
     margin-bottom: 20px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .item-list > li {
+    background-color: #000;
+  }
 }
 
 .item-list > li:last-child {
@@ -107,11 +156,19 @@ a {
 .tag-list li,
 .tag {
     display: inline-block;
-    background-color: #000;
-    color: #ddd;
+    background-color: #34c759;
+    color: #f2f2f7;
     padding: 4px 6px;
     border-radius: 5px;
     margin-right: 5px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .tag-list li,
+  .tag {
+    background-color: #30d158;
+    color: #1c1c1e;
+  }
 }
 
 .tag-list a,
@@ -143,26 +200,74 @@ footer {
 }
 
 @media (prefers-color-scheme: dark) {
-    body {
-        background-color: #222;
-    }
-
-    body,
-    header .site-name {
-        color: #ddd;
-    }
-
-    .item-list > li {
-        background-color: #333;
-    }
-
-    header {
-        background-color: #000;
-    }
+ footer {
+    color: #8a8a8a;
+  }
 }
 
 @media(max-width: 600px) {
     .wrapper {
         padding: 40px 20px;
     }
+}
+
+pre {
+    margin-bottom: 1.5em;
+    background-color: #1a1a1a;
+    padding: 16px 0;
+    border-radius: 8px;
+}
+
+@media (prefers-color-scheme: dark) {
+ pre {
+    background-color: #000;
+  }
+}
+
+pre code {
+    font-family: monospace;
+    display: block;
+    padding: 0 20px;
+    color: #ffffff;
+    line-height: 1.4em;
+    font-size: 1.2em;
+    overflow-x: auto;
+    white-space: pre;
+    -webkit-overflow-scrolling: touch;
+}
+
+pre code .keyword {
+    color: #e73289;
+}
+
+pre code .type {
+    color: #8281ca;
+}
+
+pre code .call {
+    color: #348fe5;
+}
+
+pre code .property {
+    color: #21ab9d;
+}
+
+pre code .number {
+    color: #db6f57;
+}
+
+pre code .string {
+    color: #fa641e;
+}
+
+pre code .comment {
+    color: #6b8a94;
+}
+
+pre code .dotAccess {
+    color: #92b300;
+}
+
+pre code .preprocessing {
+    color: #b68a00;
 }

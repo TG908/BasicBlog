@@ -11,4 +11,7 @@ My first post's text.
 ```
 let x = 3
 print(x)
+func foo(x: Int) {
+    return 2 * x
+}
 ```
