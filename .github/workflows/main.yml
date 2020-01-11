@@ -18,9 +18,11 @@ jobs:
         ssh-keyscan github.com >> ~/.ssh/known_hosts
         ssh-agent -a $SSH_AUTH_SOCK > /dev/null
         ssh-add - <<< "${DEPLOY_KEY}"
-    - name: Build Blog
+    - name: Install dependencies
+      run: pip3 install pygments
+    - name: Build blog
       run: swift run
-    - name: Deploy Blog
+    - name: Deploy blog
       env:
         SSH_AUTH_SOCK: /tmp/ssh_agent.sock
       run: swift run BasicBlog --deploy
