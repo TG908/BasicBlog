@@ -24,4 +24,6 @@ struct BasicBlog: Website {
 }
 
 // This will generate your website using the built-in Foundation theme:
-try BasicBlog().publish(withTheme: .basicBlog, deployedUsing: .gitHub("tg908/tg908.github.io", useSSH: true))
+try BasicBlog().publish(withTheme: .basicBlog,
+                        deployedUsing: .gitHub("tg908/tg908.github.io", useSSH: true,
+                        additionalSteps: [.copyFile(at: "Ressources/CNAME")]))
