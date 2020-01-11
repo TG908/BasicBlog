@@ -19,8 +19,8 @@ jobs:
         ssh-agent -a $SSH_AUTH_SOCK > /dev/null
         ssh-add - <<< "${DEPLOY_KEY}"
     - name: Build Blog
-      run: publish generate
+      run: swift build
     - name: Deploy Blog
       env:
         SSH_AUTH_SOCK: /tmp/ssh_agent.sock
-      run: publish deploy
+      run: swift run
