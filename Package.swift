@@ -9,12 +9,13 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/johnsundell/publish.git", from: "0.3.0"),
-        .package(url: "https://github.com/johnsundell/plot.git", from: "0.4.0")
+        .package(url: "https://github.com/johnsundell/plot.git", from: "0.4.0"),
+        .package(url: "https://github.com/TG908/PygmentsPublishPlugin.git", from: "0.0.1")
     ],
     targets: [
         .target(
             name: "BasicBlog",
-            dependencies: ["Publish", "Plot"]
+            dependencies: ["Publish", "Plot", "PygmentsPublishPlugin"]
         )
     ]
 )

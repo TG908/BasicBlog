@@ -1,6 +1,7 @@
 import Foundation
 import Publish
 import Plot
+import PygmentsPublishPlugin
 
 // This type acts as the configuration for your website.
 struct BasicBlog: Website {
@@ -16,7 +17,7 @@ struct BasicBlog: Website {
     }
 
     // Update these properties to configure your website:
-    var url = URL(string: "https://your-website-url.com")!
+    var url = URL(string: "https://gymni.ch")!
     var name = "llvm::BasicBlog"
     var description = "A blog about compilers and programming languages"
     var language: Language { .english }
@@ -25,4 +26,6 @@ struct BasicBlog: Website {
 
 // This will generate your website using the built-in Foundation theme:
 try BasicBlog().publish(withTheme: .basicBlog,
-                        deployedUsing: .gitHub("tg908/tg908.github.io", useSSH: true))
+                        deployedUsing: .gitHub("tg908/tg908.github.io", useSSH: true),
+                        plugins: [.pygmentize(withClassPrefix: "")]
+)

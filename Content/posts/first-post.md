@@ -8,6 +8,16 @@ tags: first, article
 My first post's text.
 
 
+```swift
+let x = 3
+print(x)
+func foo(x: Int) {
+    return 2 * x
+}
+```
+
+Foo
+
 ```
 let x = 3
 print(x)
