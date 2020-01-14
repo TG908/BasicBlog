@@ -55,6 +55,7 @@ private struct BasicBlogHTMLFactory<Site: Website>: HTMLFactory {
                 .header(for: context, selectedSection: section.id),
                 .wrapper(
                     .h1(.text(section.title)),
+                    .contentBody(section.body),
                     .itemList(for: section.items, on: context.site)
                 ),
                 .footer(for: context.site)
