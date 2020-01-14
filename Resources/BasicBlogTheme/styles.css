@@ -32,18 +32,17 @@ body {
 
 .contact {
     padding: 10px;
-    display:inline-block;
 }
 
 .github {
     background-image: url("/images/GitHub-Mark-64px.png");
-    display: block;
+    display: inline-block;
     width: 32px;
     height: 32px;
-    float: right;
     background-position: center;
     background-size: cover;
     transition: transform .5s ease;
+    float: right;
 }
 
 @media (prefers-color-scheme: dark) {
