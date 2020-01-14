@@ -5,6 +5,7 @@
 //  Created by Tim Gymnich on 11.1.20.
 //
 
+import Foundation
 import Plot
 import Publish
 
@@ -73,12 +74,19 @@ private struct BasicBlogHTMLFactory<Site: Website>: HTMLFactory {
                 .header(for: context, selectedSection: item.sectionID),
                 .wrapper(
                     .article(
+                        .h1(.text(item.title)),
+                        .div(
+                            .group([
+                                .class("meta-data"),
+                                .tagList(for: item, on: context.site),
+                                .span("Published on: "),
+                                .date(item.date)
+                            ])
+                        ),
                         .div(
                             .class("content"),
                             .contentBody(item.body)
-                        ),
-                        .span("Tagged with: "),
-                        .tagList(for: item, on: context.site)
+                        )
                     )
                 ),
                 .footer(for: context.site)
@@ -235,5 +243,11 @@ private extension Node where Context == HTML.BodyContext {
                 .href("/feed.rss")
             ))
         )
+    }
+    
+    static func date(_ date: Date, style: DateFormatter.Style = .long) -> Node {
+        let formatter = DateFormatter()
+        formatter.dateStyle = style
+        return .text(formatter.string(from: date))
     }
 }
