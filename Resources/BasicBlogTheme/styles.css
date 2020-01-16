@@ -135,6 +135,12 @@ h2 {
 
 p {
     margin-bottom: 10px;
+    text-align: justify;
+    text-size: large;
+}
+
+footer p {
+    text-align: center;
 }
 
 a {
