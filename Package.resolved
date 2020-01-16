@@ -11,6 +11,15 @@
         }
       },
       {
+        "package": "FaviconPublishPlugin",
+        "repositoryURL": "https://github.com/TG908/FaviconPublishPlugin.git",
+        "state": {
+          "branch": null,
+          "revision": "8e78eef8c1b6c596007e51a87729ee50da50579d",
+          "version": "0.0.3"
+        }
+      },
+      {
         "package": "Files",
         "repositoryURL": "https://github.com/johnsundell/files.git",
         "state": {
@@ -24,8 +33,8 @@
         "repositoryURL": "https://github.com/johnsundell/ink.git",
         "state": {
           "branch": null,
-          "revision": "c88bbce588a1ebfde2cf4d61eb9865a3edaa27d4",
-          "version": "0.2.0"
+          "revision": "a9a1a0190aaacc9058a2bfbdcd831785eac26f43",
+          "version": "0.3.0"
         }
       },
       {
@@ -51,17 +60,8 @@
         "repositoryURL": "https://github.com/TG908/PygmentsPublishPlugin.git",
         "state": {
           "branch": null,
-          "revision": "25fa754386df4ce8c68d7151d1a6c0118a57af74",
-          "version": "0.0.4"
-        }
-      },
-      {
-        "package": "Splash",
-        "repositoryURL": "https://github.com/johnsundell/splash.git",
-        "state": {
-          "branch": null,
-          "revision": "4da9bbd0bc14d5774b112fc4bb1859d5a67fb478",
-          "version": "0.10.0"
+          "revision": "d23d186913eaf388ba70000ddd1d76f1fa67f5df",
+          "version": "0.0.6"
         }
       },
       {

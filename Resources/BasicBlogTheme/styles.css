@@ -55,6 +55,13 @@ body {
   transform: scale(1.2);
 }
 
+.wrapper a[href^="http"] {
+  padding-left: 19px;
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
 .meta-data {
   padding: 0px 0px 30px 0px;
   color: #8a8a8a;
