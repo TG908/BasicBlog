@@ -7,7 +7,7 @@ My main interests are compilers, programming languages and software engineering.
 
 ## Contact
 
-[E-Mail](tg908@icloud.com)
+[E-Mail](mailto:tg908@icloud.com)
 
 [Keybase](https://keybase.io/tg908)
 
