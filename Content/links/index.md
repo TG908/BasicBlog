@@ -17,7 +17,7 @@ Here is some stuff on the internet I like:
 
 [Swift by Sundell](https://www.swiftbysundell.com/) *All about Swift*
 
-[Binary thoughts](https://blog.espe.tech/) *Thoughts about container infrastructures and building services*
+[The Paradox](https://blog.espe.tech/) *Thoughts about container infrastructures and building services*
 
 [Low Level Bits](https://lowlevelbits.org) *Insights into low level programming and developer tools*
 
