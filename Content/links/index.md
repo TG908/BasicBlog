@@ -1,6 +1,5 @@
 ---
 title: Links
-description: A description of my first post.
 ---
 
 Here is some stuff on the internet I like:
