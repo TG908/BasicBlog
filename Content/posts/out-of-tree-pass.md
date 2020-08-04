@@ -1,11 +1,11 @@
 ---
 date: 2020-02-19 20:00
-description: Using CMake to build a LLVM Pass either from source or using a precompiled version of LLVM.
+description: Using CMake to build a LLVM Pass either from source or using a precompiled version of LLVM
 tags: llvm-pass, llvm, cmake
-title: Building an out of tree LLVM Pass using CMake
+title: Building an out of Tree LLVM Pass using CMake
 ---
 
-## Compiling LLVM vs. using precompiled LLVM libraries
+## Compiling LLVM vs. using precompiled LLVM Libraries
 
 There are two options for creating your own LLVM pass: Your pass can either live directly inside the LLVM source tree or it can live outside in its own tree. In this blog post, I will go into detail about setting up an out of source LLVM pass.
 
@@ -16,12 +16,12 @@ The LLVM documentation suggests using a precompiled version of the LLVM librarie
 
 To make your LLVM pass more flexible your build system should allow building either from source or from the precompiled LLVM libraries.
 
-## Setting up the build system
+## Setting up the Build System
 
 Building a LLVM pass using the LLVM sources is not as simple as using precompiled LLVM libraries.
 LLVMs build system makes use of lots of custom CMake macros which have to be included in your build system for it to work right.
 
-## Building the pass
+## Building the Pass
 
 ### Detecting the configuration
 
@@ -47,7 +47,7 @@ endif()
 ```
 Check if we are using a precompiled LLVM libraries and set `BUILD_AGAINST_PRECOMPILED_LLVM` accordingly.
 
-### Including LLVM CMake macros
+### Including LLVM CMake Macros
 
 Next we need to include the LLVM CMake macros which are used to add libraries (`add_llvm_library`) and executables (`add_llvm_executable`) to LLVM.
 
@@ -92,14 +92,14 @@ include(AddLLVM)
 ```
 Now we can include the set of CMake modules we want to use in our build system. Those modules will allow us to use LLVM specific CMake functions and macros like `add_llvm_library` and `add_llvm_executable`.
 
-### Including LLVM headers
+### Including LLVM Headers
 
 The directories containing the LLVM headers we saved to `LLVM_INCLUDE_DIRS` before can now be included.
 ```cmake
 include_directories(${LLVM_INCLUDE_DIRS})
 ```
 
-### Creating our pass
+### Creating our Pass
 
 We are using the CMake function `add_llvm_library` to add our pass.
 ```cmake
@@ -112,7 +112,7 @@ add_llvm_library(OutOfTreeLLVMPass MODULE
 )
 ```
 
-## Build the pass
+## Build the Pass
 
 After setting up the build system our pass can be built by creating a build directory and running CMake inside the build directory.
 
@@ -123,7 +123,7 @@ Assuming the LLVM sources are located at `../llvm-project/llvm` and our pass is 
 cmake -DPATH_TO_LLVM=../llvm-project/llvm ../OutOfTreeLLVMPass
 ```
 
-### Using precompiled LLVM libraries
+### Using precompiled LLVM Libraries
 
 After downloading the precompiled LLVM libraries we can run:
 ```
@@ -135,7 +135,7 @@ Building our pass is now as simple as running:
 cmake --build .
 ```
 
-## Further reading
+## Further Reading
 
 [Template repository](https://github.com/TG908/OutOfTreeLLVMPass)
 
@@ -146,4 +146,4 @@ cmake --build .
 
 ## Feedback
 
-If you have any questions or possible improvements feel free to create a pull request or an issue on [GitHub](https://github.com/TG908/BasicBlog)
+If you have any questions or possible improvements feel free to create a pull request or an issue on [GitHub](https://github.com/TG908/BasicBlog).
