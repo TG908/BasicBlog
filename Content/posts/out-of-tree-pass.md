@@ -119,19 +119,19 @@ After setting up the build system our pass can be built by creating a build dire
 ### Using sources
 
 Assuming the LLVM sources are located at `../llvm-project/llvm` and our pass is located at `../OutOfTreeLLVMPass`
-```
+```bash
 cmake -DPATH_TO_LLVM=../llvm-project/llvm ../OutOfTreeLLVMPass
 ```
 
 ### Using precompiled LLVM Libraries
 
 After downloading the precompiled LLVM libraries we can run:
-```
+```bash
 cmake -DPATH_TO_LLVM=../clang+llvm-9.0.0-x86_64-darwin-apple ../OutOfTreeLLVMPass
 ```
 
 Building our pass is now as simple as running:
-```
+```bash
 cmake --build .
 ```
 
@@ -146,4 +146,5 @@ cmake --build .
 
 ## Feedback
 
-If you have any questions or possible improvements feel free to create a pull request or an issue on [GitHub](https://github.com/TG908/BasicBlog).
+If you would like to discuss this topic further or ask questions feel free to comment on the [GitHub discussion issue](https://github.com/TG908/BasicBlog/issues/1) for this post.
+Did I make any mistakes? If so feel free to create a pull request on [GitHub](https://github.com/TG908/BasicBlog).
