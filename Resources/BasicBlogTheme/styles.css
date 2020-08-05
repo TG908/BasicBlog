@@ -311,7 +311,7 @@ pre code {
 
 .hll { background-color: #272822; }
 .c { color: #75715e } /* Comment */
-.err { color: #b30260 } /* Error */
+.err { color: #f92672 } /* Error */
 .k { color: #66d9ef } /* Keyword */
 .l { color: #ae81ff } /* Literal */
 .n { color: #f8f8f2 } /* Name */
@@ -345,7 +345,7 @@ pre code {
 .nx { color: #a6e22e } /* Name.Other */
 .py { color: #f8f8f2 } /* Name.Property */
 .nt { color: #f92672 } /* Name.Tag */
-.nv { color: #f8f8f2 } /* Name.Variable */
+.nv { color: #f92672 } /* Name.Variable */
 .ow { color: #f92672 } /* Operator.Word */
 .w { color: #f8f8f2 } /* Text.Whitespace */
 .mf { color: #ae81ff } /* Literal.Number.Float */
