@@ -60,8 +60,8 @@
         "repositoryURL": "https://github.com/TG908/PygmentsPublishPlugin.git",
         "state": {
           "branch": null,
-          "revision": "8b95c7f73f760982742e9f71b8754edbbd81b208",
-          "version": "0.0.8"
+          "revision": "469d4b00e21cc5a00958b9824e308af1db309ceb",
+          "version": "0.0.10"
         }
       },
       {
