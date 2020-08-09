@@ -2,7 +2,7 @@
 date: 2020-08-05 20:00
 description: Why I love using pragma marks for structuring my code
 tags: swift, swift-style-guide
-title: Implementing Protocols in Swift Extensions is bad Style
+title: Declaring Protocol Conformance in Swift Extensions is bad Style
 ---
 
 ## Introduction
