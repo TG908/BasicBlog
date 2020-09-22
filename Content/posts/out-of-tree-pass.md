@@ -137,7 +137,7 @@ cmake --build .
 
 ## Further Reading
 
-[Template repository](https://github.com/TG908/OutOfTreeLLVMPass)
+[Template repository](https://github.com/tgymnich/OutOfTreeLLVMPass)
 
 [LLVM documentation](https://llvm.org/docs/CMake.html#developing-llvm-passes-out-of-source)
 
@@ -146,5 +146,5 @@ cmake --build .
 
 ## Feedback
 
-If you would like to discuss this topic further or ask questions feel free to comment on the [GitHub discussion issue](https://github.com/TG908/BasicBlog/issues/1) for this post.
-Did I make any mistakes? If so feel free to create a pull request on [GitHub](https://github.com/TG908/BasicBlog).
+If you would like to discuss this topic further or ask questions feel free to comment on the [GitHub discussion issue](https://github.com/tgymnich/BasicBlog/issues/1) for this post.
+Did I make any mistakes? If so feel free to create a pull request on [GitHub](https://github.com/tgymnich/BasicBlog).
