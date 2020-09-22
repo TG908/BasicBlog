@@ -7,9 +7,9 @@ My main interests are compilers, programming languages and software engineering.
 
 ## Contact
 
-[E-Mail](mailto:tg908@icloud.com)
+[E-Mail](mailto:tgymnich@icloud.com)
 
 [Keybase](https://keybase.io/tg908)
 
-[GitHub](https://github.com/tg908)
+[GitHub](https://github.com/tgymnich)
 
