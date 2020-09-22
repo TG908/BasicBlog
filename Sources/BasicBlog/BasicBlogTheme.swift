@@ -185,7 +185,7 @@ private extension Node where Context == HTML.BodyContext {
 
         return .header(
             .contact(
-                .a(.class("github"), .href("https://github.com/tg908"))),
+                .a(.class("github"), .href("https://github.com/tgymnich"))),
             .wrapper(
                 .a(.class("site-name"), .href("/"), .text(context.site.name)),
                 .if(sectionIDs.count > 1,
