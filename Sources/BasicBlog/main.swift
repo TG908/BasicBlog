@@ -27,6 +27,6 @@ struct BasicBlog: Website {
 
 // This will generate your website using the built-in Foundation theme:
 try BasicBlog().publish(withTheme: .basicBlog,
-                        deployedUsing: .gitHub("tg908/tg908.github.io", useSSH: true),
+                        deployedUsing: .gitHub("tgymnich/tgymnich.github.io", useSSH: true),
                         plugins: [.pygmentize(), .addFaviconsToLinks()]
 )
