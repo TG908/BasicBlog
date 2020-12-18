@@ -12,7 +12,7 @@
       },
       {
         "package": "FaviconPublishPlugin",
-        "repositoryURL": "https://github.com/TG908/FaviconPublishPlugin.git",
+        "repositoryURL": "https://github.com/tgymnich/FaviconPublishPlugin.git",
         "state": {
           "branch": null,
           "revision": "8e78eef8c1b6c596007e51a87729ee50da50579d",
@@ -24,8 +24,8 @@
         "repositoryURL": "https://github.com/johnsundell/files.git",
         "state": {
           "branch": null,
-          "revision": "22fe84797d499ffca911ccd896b34efaf06a50b9",
-          "version": "4.1.1"
+          "revision": "d273b5b7025d386feef79ef6bad7de762e106eaf",
+          "version": "4.2.0"
         }
       },
       {
@@ -57,7 +57,7 @@
       },
       {
         "package": "PygmentsPublishPlugin",
-        "repositoryURL": "https://github.com/TG908/PygmentsPublishPlugin.git",
+        "repositoryURL": "https://github.com/tgymnich/PygmentsPublishPlugin.git",
         "state": {
           "branch": null,
           "revision": "469d4b00e21cc5a00958b9824e308af1db309ceb",
