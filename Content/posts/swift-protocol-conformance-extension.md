@@ -77,5 +77,5 @@ Pragma marks are a much better tool to structure and document your code, they ha
 ## Feedback
 
 Do you like using extensions for protocol conformance? Did I forget any benefits of using extensions for protocol conformance?
-Let me know on [GitHub](https://github.com/tgymnich/BasicBlog/issues/2).
+Let me know on [GitHub Discussions](https://github.com/tgymnich/BasicBlog/discussions/8).
 
