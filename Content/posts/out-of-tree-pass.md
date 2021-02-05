@@ -147,4 +147,4 @@ cmake --build .
 ## Feedback
 
 If you would like to discuss this topic further or ask questions feel free to comment on the [GitHub discussion issue](https://github.com/tgymnich/BasicBlog/issues/1) for this post.
-Did I make any mistakes? If so feel free to create a pull request on [GitHub](https://github.com/tgymnich/BasicBlog).
+Did I make any mistakes? If so feel free to create a pull request on [GitHub Discussions](https://github.com/tgymnich/BasicBlog/discussions/10).
