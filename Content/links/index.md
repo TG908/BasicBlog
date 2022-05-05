@@ -6,6 +6,8 @@ Here is some stuff on the internet I like:
 
 ## Blogs
 
+[Bartosz Ciechanowski's blog](https://ciechanow.ski/gps/) *Amazing animations*
+
 [Daniel Lemire's blog](https://lemire.me/) *How to write stupidly fast code and more*
 
 [Embedded in Academia](https://blog.regehr.org) *Compiler construction, program optimization and tools*
