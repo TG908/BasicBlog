@@ -6,7 +6,7 @@ Here is some stuff on the internet I like:
 
 ## Blogs
 
-[Bartosz Ciechanowski's blog](https://ciechanow.ski/gps/) *Amazing animations*
+[Bartosz Ciechanowski's blog](https://ciechanow.ski/gps/) *Stunning animations*
 
 [Daniel Lemire's blog](https://lemire.me/) *How to write stupidly fast code and more*
 
