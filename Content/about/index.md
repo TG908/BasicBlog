@@ -2,14 +2,11 @@
 title: About
 ---
 
-I'm Tim. I study computer science at the Department of Informatics at the Technical University of Munich. At the moment I am working on a practical comparison of full linear equalities vs. two-variable linear equalities as invariants in llvm IR for my bachelors thesis.
-My main interests are compilers, programming languages and software engineering. I currently work as an iOS software engineer at Freeletics.
+Hey I'm Tim, a postgraduate student at TU Munich, studying for my M.Sc. in Computer Science. My main interests are in compiler optimizations for high performance computing and programming languages.
 
 ## Contact
 
 [E-Mail](mailto:tgymnich@icloud.com)
-
-[Keybase](https://keybase.io/tg908)
 
 [GitHub](https://github.com/tgymnich)
 
