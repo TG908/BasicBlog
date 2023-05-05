@@ -1,22 +1,28 @@
-// swift-tools-version:5.1
+// swift-tools-version:5.7
 
 import PackageDescription
 
 let package = Package(
     name: "BasicBlog",
+    platforms: [.macOS(.v12)],
     products: [
         .executable(name: "BasicBlog", targets: ["BasicBlog"])
     ],
     dependencies: [
-        .package(url: "https://github.com/johnsundell/publish.git", from: "0.3.0"),
-        .package(url: "https://github.com/johnsundell/plot.git", from: "0.4.0"),
-        .package(url: "https://github.com/tgymnich/PygmentsPublishPlugin.git", from: "0.0.1"),
-        .package(url: "https://github.com/tgymnich/FaviconPublishPlugin.git", from: "0.0.1")
+        .package(url: "https://github.com/johnsundell/publish.git", from: "0.9.0"),
+        .package(url: "https://github.com/johnsundell/plot.git", from: "0.11.0"),
+        .package(url: "https://github.com/tgymnich/PygmentsPublishPlugin.git", from: "0.1.0"),
+        .package(url: "https://github.com/tgymnich/FaviconPublishPlugin.git", from: "0.1.0")
     ],
     targets: [
-        .target(
+        .executableTarget(
             name: "BasicBlog",
-            dependencies: ["Publish", "Plot", "PygmentsPublishPlugin", "FaviconPublishPlugin"]
+            dependencies: [
+                .product(name: "Publish", package: "publish"),
+                .product(name: "PygmentsPublishPlugin", package: "PygmentsPublishPlugin"),
+                .product(name: "FaviconPublishPlugin", package: "FaviconPublishPlugin"),
+                .product(name: "Plot", package: "Plot")
+            ]
         )
     ]
 )
