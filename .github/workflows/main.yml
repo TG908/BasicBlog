@@ -4,7 +4,10 @@ on: [push]
 
 jobs:
   build:
-
+    environment:
+      name: github-pages
+      url: https://gymni.ch
+      
     runs-on: macos-latest
 
     steps:
